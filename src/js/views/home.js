@@ -1,5 +1,7 @@
 import React from "react";
 import "../../styles/home.css";
+import { Card } from "../component/card";
+
 
 export const Home = () => (
 <div className="container text-center">
@@ -15,5 +17,13 @@ export const Home = () => (
             <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8bf023f8-3372-48d1-9d76-13637367355f/d6auue7-828a2d8c-601e-4fdd-aee4-450b301f6241.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhiZjAyM2Y4LTMzNzItNDhkMS05ZDc2LTEzNjM3MzY3MzU1ZlwvZDZhdXVlNy04MjhhMmQ4Yy02MDFlLTRmZGQtYWVlNC00NTBiMzAxZjYyNDEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7V6dT_bAzFEVQhFo7Lql7n3iIMNKHSSzIbOICrjbEAE"  style={{ width: "800px", height: "550px" }}/>
         </div>
     </div>
+        <div className="col"> <h1> Personajes</h1>
+        <Card/><Card/><Card/>
+        </div>
+
+        <div className="row"> <h1> Hechizos</h1>
+        <Card/><Card/><Card/>
+        </div>
+        
 </div>
 );

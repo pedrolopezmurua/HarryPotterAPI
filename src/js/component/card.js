@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import personajes from '../../img/personajes.png'
+import hechizos from '../../img/hechizos.jpeg'
 
 export const Card = () => (
     <div className="container-fluid p-4">
@@ -6,7 +8,7 @@ export const Card = () => (
         <div className="col mb-4">
           <div className="card">
             <img
-              src="https://gossipvehiculo.com/wp-content/uploads/2021/04/1-2021_Mercedes_G63_001-source_Cropped.jpg"
+              src={ personajes }
               className="card-img-top"
               alt="..."
             />
