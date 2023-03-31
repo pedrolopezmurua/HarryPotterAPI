@@ -15,11 +15,5 @@ export const Personaje = () => (
             <img src={ personaje } style={{ width: "800px", height: "550px" }}/>
         </div>
     </div>
-    <div className="row"> 
-    <h1> PERSONAJES </h1>
-    <div className=" d-flex">
-        <Card/>
-    </div>
-</div>
 </div>
 );

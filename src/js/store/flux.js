@@ -1,6 +1,12 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
+			personajes:{
+
+			},
+			hechizos:{
+
+			},
 			demo: [
 				{
 					title: "FIRST",
@@ -23,6 +29,20 @@ const getState = ({ getStore, getActions, setStore }) => {
 				/**
 					fetch().then().then(data => setStore({ "foo": data.bar }))
 				*/
+				loadSomeData: () => {
+					fetch("https://hp-api.onrender.com/api/characters")
+						.then(response => response.json())
+						.then(data => actions.setCharacters(data))
+						setStore({})
+						.catch(error => console.log(error));
+						
+				
+					fetch("https://hp-api.onrender.com/api/spells")
+						.then(response => response.json())
+						.then(data => actions.setSpells(data))
+						.catch(error => console.log(error));
+				}
+				
 			},
 			changeColor: (index, color) => {
 				//get the store
