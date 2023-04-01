@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/home.css";
-import { Card } from "../component/card";
+import { CardHechizo } from "../component/cardHechizo";
 import hechizo from '../../img/hechizos.jpeg'
 
 export const Hechizo = () => (

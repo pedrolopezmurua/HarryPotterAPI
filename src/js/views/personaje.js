@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/home.css";
-import { Card } from "../component/card";
+import { CardPersonaje } from "../component/cardPersonaje";
 import personaje from '../../img/personajes.png'
 import hechizo from '../../img/hechizos.jpeg'
 

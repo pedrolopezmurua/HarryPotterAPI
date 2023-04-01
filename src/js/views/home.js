@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/home.css";
-import { Card } from "../component/card";
+import { CardPersonajes } from "../component/cardPersonaje";
 
 
 export const Home = () => (

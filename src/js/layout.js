@@ -2,14 +2,21 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
-import { Home } from "./views/home";
+
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 
-import { Personaje } from "./views/personaje";
-import { Hechizo } from "./views/hechizo";
-import { Card } from "./component/card";
+import { Home } from "./views/home";
+import { Personaje } from "./views/personaje"; //web personaje
+import { Hechizo } from "./views/hechizo"; //web hechizo
+
+import { CardHechizos } from "./views/cardHechizos"; //vista hechizo
+import { CardPersonajes } from "./views/cardPersonajes"; // Vista personaje
+
+
+import { CardPersonaje } from "./component/cardPersonaje"; // componentes Personaje
+import { CardHechizo } from "./component/cardHechizo"; // componentes Hechizo
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
@@ -32,7 +39,8 @@ const Layout = () => {
 						<Route path="/single/:theid" element={<Single />} />
 						<Route path="/personaje" element={<Personaje />} />
 						<Route path="/hechizo" element={<Hechizo />} />
-						<Route path="/card" element={<Card />} />
+						<Route path="/cardPersonaje" element={<CardPersonajes />} />
+						<Route path="/cardHechizos" element={<CardHechizos />} />
 						<Route path="*" element={<h1>Not found!</h1>} />
 					</Routes>
 					<Footer />
