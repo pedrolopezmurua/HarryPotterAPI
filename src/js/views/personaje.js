@@ -1,6 +1,6 @@
 
 import React from "react";
-import "../../styles/home.css";
+
 import ListarPersonaje from "../component/listarPersonaje";
 import personaje from '../../img/personajes.png';
 
