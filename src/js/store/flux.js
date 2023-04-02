@@ -1,12 +1,14 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			personajes:{
+		
+			personaje:[
+				
+			],
+			hechizo:[
+			
+			],
 
-			},
-			hechizos:{
-
-			},
 			demo: [
 				{
 					title: "FIRST",

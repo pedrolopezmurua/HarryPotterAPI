@@ -16,7 +16,7 @@ const hechizos = [
     nombre: "Accio",
     descripcion: "Summons objects",
     nivel: "Intermedio",
-  },
+  }, 
   {
     nombre: "Expelliarmus",
     descripcion: "Hechizo utilizado para desarmar a un oponente.",
