@@ -1,34 +1,15 @@
-import React from "react";
-import "../../styles/styles.css";
-
-const hechizos = [
-  {
-    nombre: "Expecto Patronum",
-    descripcion: "Hechizo utilizado para repeler a los dementores.",
-    nivel: "Intermedio",
-  },
-  {
-    nombre: "Aberto",
-    descripcion: "Opens locked doors",
-    nivel: "Intermedio",
-  },
-  {
-    nombre: "Accio",
-    descripcion: "Summons objects",
-    nivel: "Intermedio",
-  }, 
-  {
-    nombre: "Expelliarmus",
-    descripcion: "Hechizo utilizado para desarmar a un oponente.",
-    nivel: "Principiante",
-  },
-];
+import React, { useContext } from 'react';
+import { Container, Row } from 'react-bootstrap';
+import { Context } from '../store/appContext';
 
 const ListarHechizo = () => {
+  const { store } = useContext(Context);
+
   return (
-    <div className="container">
+    <Container className="container">
       <div className="row justify-content-center">
-        {hechizos.map((hechizo) => (
+        
+        {store.hechizos?.results?.map((hechizo, index) => (
           <div className="col-md-4 mb-4" key={hechizo.nombre}>
             <div className="card h-100">
               <div className="card-header">
@@ -47,7 +28,7 @@ const ListarHechizo = () => {
           </div>
         ))}
       </div>
-    </div>
+    </Container>
   );
 };
 

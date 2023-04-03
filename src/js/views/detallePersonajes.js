@@ -4,10 +4,10 @@ import "../../styles/home.css";
 
 const DetallePersonajes = () => {
   return (
-    <div>
+    <Container>
       <h1>Personajes de Harry Potter</h1>
       <ListarPersonaje />
-    </div>
+    </Container>
   );
 };
 

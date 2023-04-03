@@ -5,15 +5,14 @@ import ScrollToTop from "./component/scrollToTop";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
+import Home from './views/home';
 
-import { Home } from "./views/home";
 import Personaje from "./views/personaje";
 import Hechizo from "./views/hechizo";
 import DetalleHechizos from "./views/detalleHechizos";
 import DetallePersonajes from "./views/detallePersonajes";
-
-import ListarPersonaje from "./component/listarPersonaje";
 import ListarHechizo from "./component/listarHechizo";
+import ListarPersonaje from "./component/listarPersonaje";
 
 import Navbar from "./component/navbar";
 import Footer from "./component/footer";
@@ -24,7 +23,7 @@ const Layout = () => {
   return (
     <div>
       <BrowserRouter basename={basename}>
-        <ScrollToTop />
+      {/*}  <ScrollToTop /> */}
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -32,8 +31,8 @@ const Layout = () => {
           <Route path="/single/:theid" element={<Single />} />
           <Route path="/personaje" element={<Personaje />} />
           <Route path="/hechizo" element={<Hechizo />} />
-          <Route path="/detalleHechizo/:id" element={<DetalleHechizos />} />
-          <Route path="/detallePersonaje/:id" element={<DetallePersonajes />} />
+          <Route path="/detalleHechizos/:id" element={<DetalleHechizos />} />
+          <Route path="/detallePersonajes/:id" element={<DetallePersonajes />} />
           <Route path="*" element={<h1>Not found!</h1>} />
         </Routes>
         <Footer />

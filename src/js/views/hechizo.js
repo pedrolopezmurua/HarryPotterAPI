@@ -1,10 +1,11 @@
 import React from "react";
+import { Container, Row } from 'react-bootstrap';
 import "../../styles/home.css";
 import ListarHechizo from "../component/listarHechizo";
 import hechizo from '../../img/hechizos.jpeg';
 
 const Hechizo = () => (
-  <div>
+  <Container>
     <div className="container text-center">
       <div className="p-5 row ">
         <div className="col col-lg-6 text-center">
@@ -20,7 +21,7 @@ const Hechizo = () => (
     <div>
       <ListarHechizo />
     </div>
-  </div>
+  </Container>
 );
 
 export default Hechizo;

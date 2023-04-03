@@ -2,8 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import PropTypes from "prop-types";
 import { Link, useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
-import { ListarHechizo } from "../component/listarHechizo";
-import { ListarPersonaje } from "../component/listarPersonaje";
+
 
 
 export const Single = props => {

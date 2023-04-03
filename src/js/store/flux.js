@@ -2,12 +2,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
 		
-			personaje:[
-				
-			],
-			hechizo:[
-			
-			],
+			personajes: [],
+			hechizos:[],
 
 			demo: [
 				{
@@ -31,19 +27,22 @@ const getState = ({ getStore, getActions, setStore }) => {
 				/**
 					fetch().then().then(data => setStore({ "foo": data.bar }))
 				*/
-				loadSomeData: () => {
-					fetch("https://hp-api.onrender.com/api/characters")
-						.then(response => response.json())
-						.then(data => actions.setCharacters(data))
-						setStore({})
-						.catch(error => console.log(error));
-						
-				
-					fetch("https://hp-api.onrender.com/api/spells")
-						.then(response => response.json())
-						.then(data => actions.setSpells(data))
-						.catch(error => console.log(error));
-				}
+			    fetch("https://hp-api.onrender.com/api/characters")
+        		.then(resp=> resp.json())
+        		.then(data=>{
+				console.log(data);
+          		setStore({personajes: data})
+        		})
+        		.catch(error=>console.log(error))
+
+
+        		fetch("https://hp-api.onrender.com/api/spells")
+        		.then(resp=> resp.json())
+        		.then(data=>{
+				console.log(data);
+          		setStore({hechizos: data})
+        		})
+        		.catch(error=>console.log(error))
 				
 			},
 			changeColor: (index, color) => {
