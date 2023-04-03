@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Container, Row } from 'react-bootstrap';
-import { Context } from '../store/appContext';
+import { Context } from "../store/appContext";
 
 const ListarPersonaje = () => {
   const { store } = useContext(Context);

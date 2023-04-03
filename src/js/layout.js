@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
+
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
@@ -31,7 +32,7 @@ const Layout = () => {
           <Route path="/single/:theid" element={<Single />} />
           <Route path="/personaje" element={<Personaje />} />
           <Route path="/hechizo" element={<Hechizo />} />
-          <Route path="/detalleHechizos/:id" element={<DetalleHechizos />} />
+          <Route path="/detallehechizos/:id" element={<DetalleHechizos />} />
           <Route path="/detallePersonajes/:id" element={<DetallePersonajes />} />
           <Route path="*" element={<h1>Not found!</h1>} />
         </Routes>

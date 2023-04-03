@@ -3,6 +3,7 @@ import { Container, Row } from 'react-bootstrap';
 import "../../styles/styles.css";
 import ListarHechizo from "../component/listarHechizo";
 import ListarPersonaje from "../component/listarPersonaje";
+import { Link } from "react-router-dom";
 
 
 const Home = () => {
@@ -21,7 +22,11 @@ const Home = () => {
         </div>
     </div>
     <div className="container">
-    <ListarHechizo />
+
+    <div>
+      <Link to="/detallehechizos/1">Inicio</Link>
+    </div>
+
       <ListarPersonaje />
 
     </div>
@@ -31,3 +36,4 @@ const Home = () => {
 };
 
 export default Home;
+
