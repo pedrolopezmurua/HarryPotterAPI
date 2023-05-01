@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 
-const ListarPersonaje = () => {
+const DetallePersonajes = () => {
   const { store } = useContext(Context);
 
   return (
@@ -21,4 +21,4 @@ const ListarPersonaje = () => {
   );
 };
 
-export default ListarPersonaje;
+export default DetallePersonajes;
