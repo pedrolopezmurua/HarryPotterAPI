@@ -12,8 +12,7 @@ import Personaje from "./views/personaje";
 import Hechizo from "./views/hechizo";
 import DetalleHechizos from "./views/detalleHechizos";
 import DetallePersonajes from "./views/detallePersonajes";
-import ListarHechizo from "./component/listarHechizo";
-import ListarPersonaje from "./component/listarPersonaje";
+
 
 import Navbar from "./component/navbar";
 import Footer from "./component/footer";

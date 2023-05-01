@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row } from 'react-bootstrap';
 import "../../styles/styles.css";
-import ListarHechizo from "../component/listarHechizo";
-import ListarPersonaje from "../component/listarPersonaje";
+import ListarHechizo from "../component/listarhechizo";
+import ListarPersonaje from "../component/listarpersonaje";
 import { Link } from "react-router-dom";
 
 
@@ -24,10 +24,14 @@ const Home = () => {
     <div className="container">
 
     <div>
-      <Link to="/detallehechizos/1">Inicio</Link>
+      <Link to="/detallehechizos/">Inicio</Link>
+
     </div>
 
       <ListarPersonaje />
+      <ListarHechizo />
+    
+     
 
     </div>
 </div>

@@ -7,7 +7,7 @@ const DetalleHechizos = () => {
   const { id } = useParams();
   const { store } = useContext(Context);
   const idHechizo = parseInt(id) - 1; // Restamos 1 para obtener el índice del hechizo correspondiente en el arreglo
-  const hechizo = store.hechizos.results[idHechizo];
+  const hechizo = store.hechizos[idHechizo];
   
   return (
     <div>
