@@ -1,5 +1,8 @@
+// ./component/navbar.js
+
 import React from "react";
 import { Link } from "react-router-dom";
+import MenuFavoritos from "./menufavoritos.js";
 
 const Navbar = () => (
   <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -27,14 +30,17 @@ const Navbar = () => (
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ms-auto">
           <li className="nav-item">
-            <Link to="/personaje" className="nav-link active" aria-current="page">
+            <Link to="/personajes" className="nav-link active" aria-current="page">
               Personajes
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/Hechizo" className="nav-link">
+            <Link to="/hechizos" className="nav-link">
               Hechizos
             </Link>
+          </li>
+          <li className="nav-item" style={{ marginRight: "100px" }}>
+            <MenuFavoritos />
           </li>
         </ul>
       </div>
@@ -43,5 +49,3 @@ const Navbar = () => (
 );
 
 export default Navbar;
-
-	
